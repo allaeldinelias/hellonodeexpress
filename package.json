@@ -5,7 +5,10 @@
   "description": "The first Express file porject",
   "main": "index.js",
     "dependencies": {
-    "express": "^4.10.6"
+    "express": "^4.10.6",
+        "engine.io":"*",
+        "socket.io":"*",
+        "debug":"*"
 }
 
 }
