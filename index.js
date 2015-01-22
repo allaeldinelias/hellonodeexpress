@@ -2,11 +2,13 @@ var express= require("express"),
     app=express(),
     server = require('http').createServer(app),
     port = process.env.PORT ||8080,
-    debug= require('debug')('index.js');
+    debug= require('debug')('index.js'),
+    io=require('socket.io')(server);
 
 server.listen(port, function (){
     console.log("Server Listing at port %d",port);
     debug("Server Listing at port %d",port);
+
 });
 
 app.get("/student/:id",function(req, res){
